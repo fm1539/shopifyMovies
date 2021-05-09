@@ -65,7 +65,7 @@ function HomePage() {
     const nominateButtonHandler = () => setNominationsHandler(movieObj)
     
     useEffect(() => {
-        axios.get('http://www.omdbapi.com/?t=' + movie + '&apikey=611a0f03')
+        axios.get('https://www.omdbapi.com/?t=' + movie + '&apikey=611a0f03')
         .then(response => {
             console.log(response);
             let obj = response.data.Response == "True" ? {
