@@ -83,19 +83,7 @@ function HomePage() {
 
     return (
         <div>
-            <Alert show={show} variant="success">
-                <Alert.Heading>5 Nominations Made</Alert.Heading>
-                <p>
-                You have nominated 5 movies! Remove a nomination you have right now if you want
-                to nominate another movie
-                </p>
-                <hr />
-                <div className="d-flex justify-content-end">
-                <Button onClick={() => setShow(false)} variant="outline-success">
-                    Close
-                </Button>
-                </div>
-            </Alert>
+            
             <h1 style={{backgroundColor: 'transparent', textAlign: 'center'}}>The Shoppies</h1>
             <Card style={{boxShadow: '0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)', width:'50%', height: '75%', marginLeft: 'auto', marginRight: 'auto'}}>
                 <Card.Body>
@@ -171,6 +159,19 @@ function HomePage() {
             </div>
             : <h4>No nominations yet</h4>
             }
+            <Alert show={show} variant="success">
+                <Alert.Heading>5 Nominations Made</Alert.Heading>
+                <p>
+                You have nominated 5 movies! Remove a nomination you have right now if you want
+                to nominate another movie
+                </p>
+                <hr />
+                <div className="d-flex justify-content-end">
+                <Button onClick={() => setShow(false)} variant="outline-success">
+                    Close
+                </Button>
+                </div>
+            </Alert>
             </Col>
             
             </Row>
